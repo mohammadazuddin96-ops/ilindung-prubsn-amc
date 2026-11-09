@@ -26,15 +26,13 @@ jobs:
           echo "Files extracted from application package:"
           find extracted -maxdepth 5 -type f | sort | head -100
 
-          DOCKERFILE="$(find extracted -type f -path '*/backend/Dockerfile' -print -quit)"
+          DOCKERFILE="$(find extracted -type f -name Dockerfile -print -quit)"
           if [ -z "$DOCKERFILE" ]; then
-            echo "::error::Could not find backend/Dockerfile inside the uploaded ZIP."
-            echo "ZIP entries:"
-            unzip -Z1 ilindung-prubsn-amc-build-package.zip | head -100
+            echo "::error::Dockerfile not found inside the uploaded ZIP."
             exit 1
           fi
 
-          BUILD_CONTEXT="$(dirname "$(dirname "$DOCKERFILE")")"
+          BUILD_CONTEXT="$(dirname "$DOCKERFILE")"
           if [ ! -f "$BUILD_CONTEXT/backend/package.json" ]; then
             echo "::error::backend/package.json is missing from build context: $BUILD_CONTEXT"
             exit 1
