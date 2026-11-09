@@ -108,3 +108,13 @@
  .contact .agent-profile{min-width:0}
  .faq-section{padding-bottom:70px}
 }
+
+
+/* i-Lindung explainer video within the importance section */
+.importance-video{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:30px;margin:30px 0 38px;padding:22px;border:1px solid #ffffff26;border-radius:16px;background:#ffffff0b}
+.importance-video-copy span{font-size:10px;letter-spacing:.16em;font-weight:900;color:#d7b978}
+.importance-video-copy h3{font-size:clamp(21px,2.6vw,29px);line-height:1.2;margin:10px 0;color:#fff}
+.importance-video-copy p{font-size:13px;line-height:1.7;color:#c1cfd0;margin:0}
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#071923;box-shadow:0 12px 32px #0003}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:780px){.importance-video{grid-template-columns:1fr;gap:16px;padding:16px;margin:24px 0 28px}.importance-video-copy h3{font-size:22px}}
