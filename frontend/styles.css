@@ -55,3 +55,56 @@
 .sim-agent-box .sim-whatsapp{margin:0 20px 18px;background:#16834e;display:flex;justify-content:center;align-items:center;gap:8px;text-align:center}
 .sim-agent-label{padding:0 20px 15px}
 @media(max-width:780px){.family-photo{height:285px}.product-card>.product-photo{height:190px}.logo{font-size:12px}.sim-agent-box .sim-whatsapp{font-size:13px;padding:13px 12px}}
+
+
+/* Section hierarchy refresh: distinct rhythm, typography and backgrounds */
+.about-section{padding-top:88px;padding-bottom:92px}
+.about-section>div:first-child{border-left:4px solid #c7a66a;padding:10px 0 10px 26px;align-self:start}
+.about-section h2{font-size:clamp(34px,4.2vw,48px);max-width:430px;line-height:1.12}
+.about-section .lead{font-size:19px;line-height:1.75;color:#304b5b}
+.plans-section{background:#f0f3ef;padding-top:88px;padding-bottom:94px}
+.plans-section h2{font-size:clamp(35px,4.3vw,49px);letter-spacing:-.045em}
+.plans-section>.wrap>p.muted{font-size:15px;max-width:650px}
+.plans-section .cards{gap:26px;margin-top:38px}
+.plans-section .product-card{border:0;border-radius:14px;box-shadow:0 12px 35px #183d3010;transition:transform .2s ease,box-shadow .2s ease}
+.plans-section .product-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px #183d3018}
+.plans-section .product-card h3{font-size:26px;letter-spacing:-.025em}
+.benefits-section{background:#142f3c;padding:86px 0}
+.benefits-section h2{font-size:clamp(34px,4.5vw,48px);line-height:1.15;letter-spacing:-.035em}
+.benefits-section .three article{padding:25px 22px;border:1px solid #ffffff24;border-radius:12px;background:#ffffff08}
+.benefits-section .three b{font-size:12px;letter-spacing:.15em}
+.benefits-section .three h3{font-size:20px}
+.steps-section{padding-top:88px;padding-bottom:90px}
+.steps-section>small{color:#a38450!important}
+.steps-section>h2{font-size:clamp(34px,4.2vw,46px);max-width:660px}
+.steps-section .steps{gap:0 54px}
+.steps-section .steps article{padding:22px 16px;border-bottom:1px solid #e6e9e4}
+.steps-section .steps article>b{font-size:15px;background:#f2ecdf;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;flex-shrink:0}
+.steps-section .steps h3{font-size:16px;line-height:1.4}
+.steps-section .steps p{font-size:13px;line-height:1.65}
+.proof-section{background:#f8f5ed}
+.proof-section h2{font-size:clamp(32px,4vw,44px)}
+.contact{background:linear-gradient(120deg,#102d40,#1b4b50);padding:76px 4.5%}
+.contact .wrap{align-items:center}
+.contact h2{font-size:clamp(32px,4vw,44px);line-height:1.15;letter-spacing:-.035em}
+.contact .agent-profile{border-radius:14px;box-shadow:0 18px 45px #061a2338}
+.contact .agent-profile .btn{background:#16834e;color:white;border-radius:7px}
+.contact .agent-profile small{color:#9b7b42!important}
+.faq-section{padding-top:85px;padding-bottom:100px}
+.faq-section>div:first-child h2{font-size:clamp(32px,4vw,44px)}
+.faq-section .faqs details{padding:20px 0}
+.faq-section .faqs summary{font-size:15px}
+.faq-section .faqs p{font-size:14px;line-height:1.75}
+@media(max-width:780px){
+ .about-section,.plans-section,.steps-section,.faq-section{padding-top:58px;padding-bottom:62px}
+ .about-section>div:first-child{padding-left:17px}
+ .plans-section .cards{gap:18px}
+ .plans-section .product-card h3{font-size:23px}
+ .benefits-section{padding:60px 0}
+ .benefits-section .three{gap:14px}
+ .steps-section .steps{gap:0}
+ .contact{padding:58px 4.5%}
+ .contact .wrap{display:flex;flex-direction:column;align-items:stretch}
+ .contact .agent-profile{min-width:0}
+ .faq-section{padding-bottom:70px}
+}
