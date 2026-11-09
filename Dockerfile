@@ -9,6 +9,8 @@ RUN unzip -q /tmp/project.zip -d /tmp/project \
     && sed -i 's/  } catch {/  } catch (error) {/' /app/backend/src/server.js \
     && sed -i "/Tidak dapat mengesahkan akses admin/i\\      console.error('Admin authorization failed:', error);" /app/backend/src/server.js \
     && rm -rf /tmp/project /tmp/project.zip
+COPY frontend/app.js /app/frontend/app.js
+COPY frontend/styles.css /app/frontend/styles.css
 
 WORKDIR /app/backend
 RUN npm install --omit=dev
