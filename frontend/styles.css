@@ -31,3 +31,27 @@
 .sim-whatsapp{display:inline-block;margin-top:18px;background:#13834d;text-decoration:none}
 .sim-agent-label{font-size:13px;color:#64748b;margin:10px 0 0}
 @media(max-width:780px){.sim-card{padding:19px}.sim-results{grid-template-columns:1fr}.sim-coverage-head{align-items:flex-start;flex-direction:column}}
+
+
+/* AMC Group branding and human-led product imagery */
+.logo{font-size:14px;letter-spacing:.035em}
+.logo b{color:#b2925d;text-transform:none}
+.family-photo{height:360px;max-width:450px;border-radius:18px;display:block;background:#e7eade;box-shadow:0 18px 48px #0002}
+.family-photo>img{width:100%;height:100%;object-fit:cover;display:block}
+.family-photo .familyCaption{bottom:14px;left:14px;right:14px;box-shadow:0 4px 20px #0002}
+.cards article.product-card{overflow:hidden;padding:0 0 28px}
+.product-card>.product-photo{display:block;width:100%;height:210px;object-fit:cover;object-position:center 35%;margin-bottom:24px;background:#e9eee9}
+.product-card>label,.product-card>h3,.product-card>p,.product-card>ul,.product-card>.link{margin-left:28px;margin-right:28px}
+.product-card>label{display:block}
+.product-card>ul{padding-left:18px}
+.sim-disclaimer{font-size:10px;line-height:1.55;color:#87919d;margin-top:14px}
+.sim-agent-box{margin-top:22px;border:1px solid #d9e6df;border-radius:16px;overflow:hidden;background:#f7fbf8}
+.sim-agent-box-head{padding:18px 20px;background:#e8f3ed;display:flex;flex-direction:column;gap:3px}
+.sim-agent-box-head span{font-size:10px;letter-spacing:.13em;font-weight:900;color:#537665}
+.sim-agent-box-head b{font-size:18px;color:#183d2d}
+.sim-agent-box-head small{font-size:12px;color:#60766a}
+.sim-agent-box-body{padding:15px 20px}
+.sim-agent-box-body p{font-size:12px;line-height:1.65;color:#52665b;margin:0;overflow-wrap:anywhere}
+.sim-agent-box .sim-whatsapp{margin:0 20px 18px;background:#16834e;display:flex;justify-content:center;align-items:center;gap:8px;text-align:center}
+.sim-agent-label{padding:0 20px 15px}
+@media(max-width:780px){.family-photo{height:285px}.product-card>.product-photo{height:190px}.logo{font-size:12px}.sim-agent-box .sim-whatsapp{font-size:13px;padding:13px 12px}}
